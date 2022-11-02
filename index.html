@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Book</title>
+    <link rel="icon" type="image/png" href="img/pikachu.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="battle.css">
+    <link rel="stylesheet" href="pokedex.css">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">    
+                
+</head>
+<body>
+    <header>
+        <div class="pokebook">Pokébook </div>
+    </header>
+    <div class="tabscontrol">
+        <div class="searchbar">
+            <div class="searchf">
+                <label for="byindex">Pokedex number or Name:</label>
+                <input id="byindex" type="text" placeholder="  Search your pokemon">
+            </div>
+            <!-- <div class="searchf">
+                <label for="byname">Search by name:</label>
+                <input id="byname" type="text" placeholder="type a name">
+            </div> -->
+        </div>
+        <div class="buttonswrapper">
+            <a class="tabbutton" id="infobutton" onclick="openTab(event,`general`)">General</a>
+            <a class="tabbutton" id="battlebutton" onclick="openTab(event,`battle`)">Battle</a>
+            <a  class="tabbutton" id="pokedexbutton" onclick="openTab(event,`pokedex`)">Pokedex</a>
+            <a  class="tabbutton" id="gamebutton">Game</a>
+        </div>
+    </div>
+    <div class="tabs">
+        <div class="tabcontent" id="general">
+            <div class="container">
+                <div class="bleft"><img src="left.png" alt=""></div>
+                <div class="card">
+                    <!-- <div class="contName">
+                        <div class="name">Bulbasaur</div>
+                        <div class="id">1</div>
+                    </div>
+                    <div class="pokethumb">
+                        <img src="pokepics/001-Bulbasaur.png" alt="">
+                    </div>
+                    <div class="stats">
+                        <div class="info">
+                            <div class="title">Type:</div>
+                            <div class="category">Grass</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Height (cm):</div>
+                            <div class="height">2 04</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Weight (kg):</div>
+                            <div class="weight">15.2</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Base Experience:</div>
+                            <div class="gender">64</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Ability:</div>
+                            <div class="ability">Overgrow</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="bright"><img src="right.png" alt=""></div>
+            </div>
+        </div>
+        <div class="tabcontent" id="battle">
+            <div class="containerb">
+                <div class="bleft"><img src="left.png" alt=""></div>
+                <div class="cardb">
+                    <!-- <div class="contName">
+                        <div class="name">Bulbasaur</div>
+                        <div class="id">1</div>
+                    </div>
+                    <div class="pokethumbb">
+                        <img src="pokepics/001-Bulbasaur.png" alt="">
+                    </div>
+                    <div class="stats">
+                        <div class="info">
+                            <div class="title">Type:</div>
+                            <div class="category">Grass</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Height (cm):</div>
+                            <div class="height">2 04</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Weight (kg):</div>
+                            <div class="weight">15.2</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Base Experience:</div>
+                            <div class="gender">64</div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Ability:</div>
+                            <div class="ability">Overgrow</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="bright"><img src="right.png" alt=""></div>
+            </div>
+        </div>
+        <div class="tabcontent" id="pokedex">
+            <div class="containerp">
+                <div class="allcards">
+                    <!-- <div class="cardp">
+                        <div class="contNamep">
+                            <div class="namep">Bulbasaur</div>
+                            <div class="idp">1</div>
+                        </div>
+                        <div class="pokethumbp">
+                            <img src="pokepics/001-Bulbasaur.png" alt="">
+                        </div>
+                        <div class="categoryp">Grass</div>
+                    </div> -->
+                </div>
+                <div class="loadwrapper">
+                    <button class="loadbutton">Load more Pokémons</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="pokeapi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script> document.getElementById("infobutton").click();</script>
+</body>
+</html>

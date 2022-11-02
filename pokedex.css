@@ -1,0 +1,182 @@
+:root{
+    --font:"Flexo-Regular",arial,sans-serif;
+    --Pokefont: 'Pokemon Solid', sans-serif;
+    --pokeyellow:rgb(199, 160, 8);
+    --pokelogo:rgb(60, 90, 166);
+    --color1: #12184d;
+    --color2: #14358a;
+    --color3: #17ae70;
+    --color4: #b5ffc6;
+    --color5: #e7efb3;
+    --color6: #ff8329;
+    --color7:#ffbd2a;
+    --color8: #fff268;
+    --color9: #fffbb1;
+    --color10: #fffbeb;
+    --color11: #4a0d04;
+    --color12: #713f02;
+    --color13: #ec95fc;
+    --color14: #ffb0e3;
+    --color15: #fffaa6;
+    --color16: #162c07;
+    --color17: #12613b;
+    --color18: #ec715d;
+    --color19: #ecc855;
+    --color20: #f7eda9;
+    --color21: #20dbc3;
+    --color22: #b6e980;
+    --color23: #121812;
+    --color24: #7a7a76;
+    --color25: #f3eae8;
+    --grass:#9bcc50;
+    --fire:#fd7d24;
+    --water:#4592c4;
+    --normal:#a4acaf;
+    --poison:#b97fc9;
+    --bug:#729f3f;
+    --eletric:#eed535;
+    --ground:linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    --groundb:#f7de3f;
+    --fairy:#fdb9e9;
+    --fighting: #d56723;
+    --psychic:#f366b9;
+    --rock:#a38c21;
+    --ghost:#7b62a3;
+    --ice:#51c4e7;
+    --dragon:linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    --dragonb:#53a4cf;
+    --dark:#707070;
+    --steel:#9eb7b8;
+    --flying:linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    --flyingb:#3dc7ef;
+    
+    }
+    
+    .containerp{
+        background-color: white;
+        width: 99vw;
+        min-height: 86vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .allcards{
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid red;
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px 250px 250px;
+    }
+    .loadwrapper{
+        width: 100%;
+        height: 60px;
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .loadwrapper button{
+        height: 40px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 8px;
+        background-color:var(--pokelogo);
+        color: white;
+    }
+    .pokethumbp{
+        /* border:2px solid blue; */
+        border-bottom: 1px solid black;
+        box-sizing: border-box;
+        /* background-color:#f3efe9; */
+    }
+
+    .pokethumbp img{
+        height: 200px;
+        width: 200px;
+    }
+    .categoryp{
+        margin-top: 7px;
+        width: 100px;
+        border-radius: 5px;
+        font-weight: 400;
+        text-align: center;
+        background-color:var(--grass);
+        color: white;
+    }
+    .contNamep{
+        font-family: 'Exo', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        box-sizing: border-box;
+        width: 100%;
+        background-color:#f1f1f1;
+        padding: 4px;
+        /* border: 1px solid var(--pokelogo); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .cardp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 220px;
+        height: 280px;
+        border-radius: 15px;
+        /* background-color:#f3efe9; */
+        border: 1px solid red;
+        padding: 5px;
+        margin: 15px;
+        box-sizing: border-box;
+        
+    }
+
+    .idp{
+        background-color:#313131f3;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    @media (max-width: 1560px){
+
+        .allcards{
+            grid-template-columns: 250px 250px 250px 250px 250px; 
+        }
+
+    }
+    @media (max-width: 1350px){
+
+        .allcards{
+            grid-template-columns: 250px 250px 250px 250px; 
+        }
+
+    }
+    @media (max-width: 1100px){
+
+        .allcards{
+            grid-template-columns: 250px 250px 250px; 
+        }
+
+    }
+    @media (max-width: 850px){
+
+        .allcards{
+            grid-template-columns: 250px 250px; 
+        }
+
+    }
